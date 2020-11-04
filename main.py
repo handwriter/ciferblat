@@ -127,6 +127,16 @@ class Clock(QMainWindow):
         painter.end()
 
     # Driver code
+class Mains(QMainWindow):
+
+    # constructor
+    def __init__(self):
+        super().__init__()
+
+        # creating a timer object
+        button1 = QPushButton("1")
+        button2 = QPushButton("2")
+        self.setFixedSize(400, 500)
 
 
 if __name__ == '__main__':
@@ -134,8 +144,8 @@ if __name__ == '__main__':
 
     # creating a clock object
     win = Clock()
-
+    win1 = Mains()
     # show
-    win.show()
+    win1.show()
 
     exit(app.exec_())
